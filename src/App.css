@@ -1,1 +1,92 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
+
+.ant-layout-header {
+  background-color: white;
+}
+
+.ant-tabs-nav {
+  width: 100%;
+}
+
+.ant-tabs-nav div {
+  display: flex;
+}
+
+.ant-tabs-tab {
+  flex: 1;
+}
+
+.ant-progress-line {
+  width: 80%;
+}
+
+.ant-progress-bg {
+  height: 16px !important;
+}
+
+.result-block {
+  border: 1px solid #e8e8e8;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.result-block:first-of-type {
+  margin-bottom: 16px;
+}
+
+.result-block > div {
+  margin-bottom: 8px;
+}
+
+.header-styling {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-avatar-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Utility Classes */
+
+.w-100 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.margin-top-x {
+  margin-top: 20px;
+}
+
+.margin-top-2x {
+  margin-top: 40px;
+}
+
+.margin-bottom-x {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-2x {
+  margin-bottom: 40px;
+}
+
+.margin-right-x {
+  margin-right: 8px !important;
+}
+
+.ant-layout-content {
+  padding: 16px !important;
+}
