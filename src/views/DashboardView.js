@@ -28,6 +28,7 @@ function DashboardView(props) {
 
   const handleLogout = () => {
     props.setAuthUser(null);
+    props.history.push("/");
   };
 
   const handleClick = (e) => {

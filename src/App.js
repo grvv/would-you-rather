@@ -11,7 +11,7 @@ function App(props) {
 
   useEffect(() => {
     handleInitialData();
-  }, []);
+  }, [handleInitialData]);
 
   return (
     <Router>

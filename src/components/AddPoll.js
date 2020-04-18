@@ -1,16 +1,5 @@
 import React, { useState } from "react";
-import {
-  Row,
-  Col,
-  Card,
-  Form,
-  Button,
-  Select,
-  Avatar,
-  Typography,
-  Input,
-  Divider,
-} from "antd";
+import { Card, Form, Button, Typography, Input, Divider } from "antd";
 import { connect } from "react-redux";
 import { handleSaveQuestion } from "../actions/questions";
 import { withRouter } from "react-router-dom";

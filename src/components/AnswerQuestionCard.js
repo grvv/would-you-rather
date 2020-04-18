@@ -120,6 +120,8 @@ function AnswerQuestionCard(props) {
                   style={{ marginBottom: 16 }}
                   percent={calculatePercentage(optionOneVotes, totalVotes)}
                 />
+                <br />
+                <Text>{`${optionOneVotes} out of ${totalVotes} Votes`}</Text>
               </div>
 
               <div className="result-block">
@@ -135,6 +137,8 @@ function AnswerQuestionCard(props) {
                   status="normal"
                   percent={calculatePercentage(optionTwoVotes, totalVotes)}
                 />
+                <br />
+                <Text>{`${optionTwoVotes} out of ${totalVotes} Votes`}</Text>
               </div>
             </div>
           )}
