@@ -20,5 +20,5 @@ The project can be run with
 
     npm start or yarn start
 
-The project can be viewed in the browser at
+Then project can be viewed in the browser at
 http://localhost:3000
