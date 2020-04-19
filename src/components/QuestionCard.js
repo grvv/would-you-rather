@@ -6,8 +6,6 @@ import { withRouter } from "react-router-dom";
 const { Title, Text } = Typography;
 
 function QuestionCard({ authorDetails: author, optionOne, type, history, id }) {
-  console.log("History Object", history, id);
-
   const ACTION_OBJ = {
     unAnswered: [
       <div onClick={() => history.push(`/questions/${id}`)}>

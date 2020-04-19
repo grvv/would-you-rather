@@ -13,6 +13,7 @@ import {
 } from "antd";
 import { handleSaveQuestionAnswer } from "../actions/users";
 import { connect } from "react-redux";
+import NotFound from "./NotFound";
 
 const { Title, Text } = Typography;
 
@@ -29,6 +30,9 @@ function calculatePercentage(count, totalCount) {
 function AnswerQuestionCard(props) {
   const [form] = Form.useForm();
   const { handleSaveQuestionAnswer, authUser, match } = props;
+
+  if (!props.question) return <NotFound text="Poll Not Found" />;
+
   const {
     authorDetails: author,
     optionOne,
@@ -150,9 +154,13 @@ function AnswerQuestionCard(props) {
 
 function mapStateToProps({ authUser, questions, users }, { match }) {
   const { question_id } = match.params;
-  const question = { ...questions[question_id] };
-  question.authorDetails = { ...users[question.author] };
-  question.userAnswer = users[authUser].answers[question_id];
+  let question = questions[question_id];
+
+  if (question) {
+    question = { ...question };
+    question.authorDetails = { ...users[question.author] };
+    question.userAnswer = users[authUser].answers[question_id];
+  }
 
   return {
     question,

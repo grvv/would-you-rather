@@ -3,7 +3,7 @@ import { Typography } from "antd";
 
 const { Title } = Typography;
 
-export default function NotFound() {
+export default function NotFound({ text }) {
   return (
     <>
       <img
@@ -13,7 +13,7 @@ export default function NotFound() {
       />
 
       <Title type="secondary" className="text-center margin-top-x">
-        Page Not Found
+        {text || "Page Not Found"}
       </Title>
     </>
   );
